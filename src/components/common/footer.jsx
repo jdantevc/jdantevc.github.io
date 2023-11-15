@@ -13,21 +13,23 @@ const Footer = () => {
 							<Link to="/">Home</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/">About</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/">Projects</Link>
+							<Link to="/projects">Projects</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/">Articles</Link>
+							<Link to="/articles">Articles</Link>
 						</li>
 						<li className="footer-nav-link-item">
-							<Link to="/">Contact</Link>
+							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>
 				</div>
         <div className="footer-credits">
+					<div className="footer-credits-text">
 					© 2023 Dante Vasquez. All Rights Reserved.
+					</div>
 				</div>
 			</div>
 		</>

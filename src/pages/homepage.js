@@ -60,21 +60,21 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar />
 				<div className="content-wrapper">
-					<div className="logo-container">
+				<div className="homepage-logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} />
 						</div>
 					</div>
 
 					<div className="homepage-container">
-						<div className="homepage-title">
+						<div className="title homepage-title">
 							Full-stack web and mobile app developer, and e-sports enthusiast.
 						</div>
 					</div>
-					<div className="homepage-subtitle">
+					<div className="subtitle homepage-subtitle">
 							I'm a full-stack web developer fueled by a lifelong passion for technology and with a background in law. Problem solver with great
-communication skills and stakeholder management. Committed to sustained growth, I seek opportunities to evolve as a software
-developer, working on creative solutions and projects that impact the day to day life of users.
+							communication skills and stakeholder management. Committed to sustained growth, I seek opportunities to evolve as a software
+							developer, working on creative solutions and projects that impact the day to day life of users.
 						</div>
 
 						<div className="homepage-socials">
@@ -118,7 +118,7 @@ developer, working on creative solutions and projects that impact the day to day
 								<Education />
 							</div>
 						</div>
-						<div className="homepage-footer">
+						<div className="page-footer">
 							<Footer />
 						</div>
 						
