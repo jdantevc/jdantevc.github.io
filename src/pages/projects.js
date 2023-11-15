@@ -20,19 +20,16 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							From lines of code to digital worlds: My Web Dev Adventures
+							From lines of code to digital worlds: My Web Dev Labours
 						</div>
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+						I have been actively engaged in a variety of projects over the past few months and 
+						I am pleased with the advancements I have made. 
+						Many of these projects are publicly available for exploration and contribution. 
+						If you are interested in any of my projects, please do not hesitate to examine the code 
+						and propose any improvements or enhancements that come to mind. 
+						Collaboration with others is an excellent way to learn and evolve, 
+						and I am always receptive to new ideas and feedback!
 						</div>
 
 						<div className="projects-list">
@@ -40,10 +37,24 @@ const Projects = () => {
 							<div className="projects-project">
 								<Project
 									logo={
+										"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/ruby/ruby.png"
+									}
+									title="Tweetable"
+									description="An app rooted in Twitter's model that allows users to create accounts, log in/out, create “tweets”, reply to other
+									user’s tweets and check their profiles."
+									linkText="View Project"
+									link="https://github.com"
+								/>
+							</div>
+
+							<div className="projects-project">
+								<Project
+									logo={
 										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
 									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
+									title="Eatable"
+									description="An app that allows users to access a menu of dishes, authenticate and
+									perform CRUD operations in direct communication with an external API."
 									linkText="View Project"
 									link="https://github.com"
 								/>
@@ -52,22 +63,11 @@ const Projects = () => {
 							<div className="projects-project">
 								<Project
 									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"
-									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-
-							<div className="projects-project">
-								<Project
-									logo={
 										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
 									}
-									title="Portfolio"
-									description="This website is a portfolio of my work and a place for me to share my thoughts and ideas."
+									title="Get-That-Home"
+									description="A real estate platform connecting landlords and home-seekers. Landlords can list
+									properties, and home-seekers can browse and filter listings."
 									linkText="View Project"
 									link="https://github.com"
 								/>
