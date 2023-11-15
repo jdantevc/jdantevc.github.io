@@ -1,9 +1,9 @@
 import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
-import Card from "../../components/card";
+import Card from "../common/card";
 
-import "./education.css";
+import "./styles/education.css";
 
 const Education = () => {
 	return (

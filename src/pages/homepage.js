@@ -7,13 +7,13 @@ import {
 	faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
-import NavBar from "../../components/navBar";
-import Logo from "./../../components/logo";
-import Article from "../../components/article";
-import Education from "./education";
-import Footer from "../../components/footer";
+import Logo from "../components/common/logo";
+import NavBar from "../components/common/navBar";
+import Article from "../components/homepage/article";
+import Education from "../components/homepage/education";
+import Footer from "../components/common/footer";
 
-import "./homepage.css";
+import "./styles/homepage.css";
 
 
 const Homepage = () => {
@@ -92,33 +92,36 @@ developer, working on creative solutions and projects that impact the day to day
 							/>
 						</div>
 
-						<div className="homepage-articles">
-							<div className="homepage-article">
-								<Article
-									date="September 1, 2020"
-									title="How to build a REST API with Node.js and Express"
-									description="Learn how to build a REST API with Node.js and Express"
-									link="https://www.google.com"
-								/>
+						<div className="homepage-after-title">
+							<div className="homepage-articles">
+								<div className="homepage-article">
+									<Article
+										date="September 1, 2020"
+										title="How to build a REST API with Node.js and Express"
+										description="Learn how to build a REST API with Node.js and Express"
+										link="https://www.google.com"
+									/>
+								</div>
+								<div className="homepage-article">
+									<Article
+										date="September 1, 2020"
+										title="How to build a REST API with Node.js and Express"
+										description="Learn how to build a REST API with Node.js and Express"
+										link="https://www.google.com"
+										className="homepage-article"
+									/>
+								</div>
 							</div>
-							<div className="homepage-article">
-								<Article
-									date="September 1, 2020"
-									title="How to build a REST API with Node.js and Express"
-									description="Learn how to build a REST API with Node.js and Express"
-									link="https://www.google.com"
-									className="homepage-article"
-								/>
+						
+
+							<div className="homepage-education">
+								<Education />
 							</div>
 						</div>
-
-						<div className="homepage-education">
-							<Education />
-						</div>
-
 						<div className="homepage-footer">
 							<Footer />
 						</div>
+						
 				</div>
 			</div>
 		</>
