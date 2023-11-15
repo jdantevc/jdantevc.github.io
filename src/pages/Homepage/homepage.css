@@ -9,7 +9,7 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 11%;
+	width: calc((100% - 1200px) / 2);
 	background-color: #fafafa;
 	border: 1px solid #f4f4f5;
 }
@@ -30,15 +30,16 @@
 }
 
 .content-wrapper {
-	max-width: 65%;
+	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 20px;
 }
 
 .homepage-container {
-	padding-top: 5vh;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	margin: 0;
+	padding-top: 25px;
 }
 
 .homepage-title {
@@ -80,6 +81,13 @@
 
 .homepage-article {
 	padding-bottom: 5px;
+}
+
+.homepage-education {
+	position: absolute;
+	bottom: 200px;
+	right: 300px;
+	width: 470px;
 }
 
 .homepage-footer {

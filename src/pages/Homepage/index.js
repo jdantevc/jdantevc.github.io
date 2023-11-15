@@ -10,9 +10,11 @@ import {
 import NavBar from "../../components/navBar";
 import Logo from "./../../components/logo";
 import Article from "../../components/article";
+import Education from "./education";
 import Footer from "../../components/footer";
 
 import "./homepage.css";
+
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -57,8 +59,6 @@ const Homepage = () => {
 		<>
 			<div className="page-content">
 				<div className="content-wrapper">
-					<NavBar />
-
 					<div className="logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} />
@@ -109,6 +109,10 @@ developer, working on creative solutions and projects that impact the day to day
 									className="homepage-article"
 								/>
 							</div>
+						</div>
+
+						<div className="homepage-education">
+							<Education />
 						</div>
 
 						<div className="homepage-footer">
