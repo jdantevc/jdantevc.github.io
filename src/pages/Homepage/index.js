@@ -58,6 +58,7 @@ const Homepage = () => {
 	return (
 		<>
 			<div className="page-content">
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="logo-container">
 						<div style={logoStyle}>
