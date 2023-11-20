@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "../styles/card.css";
+import "./styles/card.css";
 
 const Card = (props) => {
 	const { icon, title, body } = props;
@@ -15,7 +15,7 @@ const Card = (props) => {
 					<div className="card-title">{title}</div>
 				</div>
 				<div className="card-body">
-					<p className="card-text">{body}</p>
+					<div className="card-text">{body}</div>
 				</div>
 			</div>
 		</div>

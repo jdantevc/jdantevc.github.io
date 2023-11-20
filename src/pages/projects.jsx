@@ -1,8 +1,8 @@
 import React from "react";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+import NavBar from "../components/common/navBar.jsx";
+import Footer from "../components/common/footer.jsx";
+import Logo from "../components/common/logo.jsx";
 import Project from "../components/projects/projects.jsx";
 
 import "./styles/projects.css";

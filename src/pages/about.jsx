@@ -24,7 +24,7 @@ const About = () => {
 							<div className="about-right-side">
 								<div className="title about-title">
 									I’m Dante Vasquez. I live in Peru, where I
-									create digital worlds.
+									create for a new future.
 								</div>
 
 								<div className="subtitle about-subtitle">

@@ -11,6 +11,7 @@ import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Education from "../components/homepage/education";
+import myArticles from "../data/articles";
 import Footer from "../components/common/footer";
 
 import "./styles/homepage.css";
@@ -22,28 +23,29 @@ const Homepage = () => {
 	const [oldLogoSize, setOldLogoSize] = useState(80);
 
 	useEffect(() => {
-			window.addEventListener("scroll", handleScroll);
-			return () => window.removeEventListener("scroll", handleScroll);
-	}, [logoSize]);
+		const handleScroll = () => {
+			let scroll = Math.round(window.scrollY, 2);
 
-	const handleScroll = () => {
-		let scroll = Math.round(window.scrollY, 2);
+			let newLogoSize = 80 - (scroll * 4) / 10;
 
-		let newLogoSize = 80 - (scroll * 4) / 10;
-
-		if (newLogoSize < oldLogoSize) {
-			if (newLogoSize > 40) {
-				setLogoSize(newLogoSize);
-				setOldLogoSize(newLogoSize);
-				setStayLogo(false);
+			if (newLogoSize < oldLogoSize) {
+				if (newLogoSize > 40) {
+					setLogoSize(newLogoSize);
+					setOldLogoSize(newLogoSize);
+					setStayLogo(false);
+				} else {
+					setStayLogo(true);
+				}
 			} else {
-				setStayLogo(true);
+				setLogoSize(newLogoSize);
+				setStayLogo(false);
 			}
-		} else {
-			setLogoSize(newLogoSize);
-			setStayLogo(false);
-		}
-	};
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [logoSize, oldLogoSize]);
+
 
 	const logoStyle = {
 		display: "flex",
@@ -94,24 +96,21 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								<div className="homepage-article">
-									<Article
-										date="September 1, 2020"
-										title="How to build a REST API with Node.js and Express"
-										description="Learn how to build a REST API with Node.js and Express"
-										link="https://www.google.com"
-									/>
-								</div>
-								<div className="homepage-article">
-									<Article
-										date="September 1, 2020"
-										title="How to build a REST API with Node.js and Express"
-										description="Learn how to build a REST API with Node.js and Express"
-										link="https://www.google.com"
+								{myArticles.map((article, index) => (
+									<div
 										className="homepage-article"
+										key={(index + 1).toString()}
+									>
+									<Article
+											key={(index + 1).toString()}
+											date={article().date}
+											title={article().title}
+											description={article().description}
+											link={"/article/" + (index + 1)}
 									/>
-								</div>
 							</div>
+							))}
+						</div>
 						
 
 							<div className="homepage-education">
