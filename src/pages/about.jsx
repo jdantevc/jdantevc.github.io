@@ -24,15 +24,11 @@ const About = () => {
 							<div className="about-right-side">
 								<div className="title about-title">
 									I’m Dante Vasquez. I live in Peru, where I
-									design digital experiences for us all.
+									create digital worlds.
 								</div>
 
 								<div className="subtitle about-subtitle">
-                Greetings! I'm Dante Vasquez Cruz—a seasoned lawyer turned passionate web developer. Despite my successful 5-year career in law after 6 years of study, my true passion for programming led me to make a dynamic career shift.
-                From an early age, I was captivated by computers, a fascination that continued throughout my legal journey. Engaging with IT professionals within the legal field illuminated my path, propelling me to embrace coding wholeheartedly.
-                Driven by my love for learning, I dedicated a year to self-study, followed by a transformative 6-month "Codeable" bootcamp. Now, I'm on the hunt for a role that nurtures my growth in web development, particularly in Ruby, JavaScript, and related frameworks. My goal is to swiftly transition from junior to senior developer by immersing myself in valuable experiences.
-
-                Passionate about gaining hands-on experience, I believe it's the catalyst for effective progression. If you're seeking a dedicated, adaptable professional who thrives on excellence, I'm eager to explore opportunities where I can contribute and continue evolving in the world of web development!
+								A former lawyer with a passion for programming shifted careers after a 5-year legal journey. Fascinated by computers since childhood, I've dedicated time to self-study and completed a 6-month coding bootcamp recently. Seeking roles in web development—particularly in Ruby, JavaScript, and related frameworks—to swiftly progress from junior to a properly specialized developer. I truly value hands-on experience and seek opportunities for growth and contribution in the tech field.	
 								</div>
 							</div>
 
