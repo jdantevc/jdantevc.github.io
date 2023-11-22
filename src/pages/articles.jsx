@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import Article from "../components/articles/articles";
+import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 
