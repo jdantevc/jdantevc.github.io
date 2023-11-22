@@ -11,8 +11,10 @@ import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Education from "../components/homepage/education";
-import myArticles from "../data/articles";
 import Footer from "../components/common/footer";
+
+import INFO from "../data/user";
+import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 
@@ -74,28 +76,44 @@ const Homepage = () => {
 
 					<div className="homepage-container">
 						<div className="title homepage-title">
-							Full-stack web and mobile app developer, and e-sports enthusiast.
+							{INFO.homepage.title}
 						</div>
 					</div>
 					<div className="subtitle homepage-subtitle">
-							I'm a full-stack web developer fueled by a lifelong passion for technology and with a background in law. Problem solver with great
-							communication skills and stakeholder management. Committed to sustained growth, I seek opportunities to evolve as a software
-							developer, working on creative solutions and projects that impact the day to day life of users.
+						{INFO.homepage.description}
 						</div>
 
 						<div className="homepage-socials">
-							<FontAwesomeIcon
-								icon={faGithub}
-								className="homepage-social-icon"
-							/>
-							<FontAwesomeIcon
-								icon={faLinkedin}
-								className="homepage-social-icon"
-							/>
-							<FontAwesomeIcon
-								icon={faMailBulk}
-								className="homepage-social-icon"
-							/>
+							<a
+								href={INFO.socials.github}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={`mailto:${INFO.main.email}`}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faMailBulk}
+									className="homepage-social-icon"
+								/>
+							</a>
 						</div>
 
 						<div className="homepage-after-title">

@@ -5,6 +5,8 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
+import INFO from "../data/user";
+
 import "./styles/about.css";
 
 const About = () => {
@@ -26,12 +28,11 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									I’m Dante Vasquez. I live in Peru, where I
-									create for a better future.
+									{INFO.about.title}
 								</div>
 
 								<div className="subtitle about-subtitle">
-								A former lawyer with a passion for programming shifted careers after a 5-year legal journey. Fascinated by computers since childhood, I've dedicated time to self-study and completed a 6-month coding bootcamp recently. Seeking roles in web development—particularly in Ruby, JavaScript, and related frameworks—to swiftly progress from junior to a properly specialized developer. I truly value hands-on experience and seek opportunities for growth and contribution in the tech field.	
+									{INFO.about.description}
 								</div>
 							</div>
 
@@ -51,10 +52,9 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-
-						<div className="page-footer">
-							<Footer />
 						</div>
+					<div className="page-footer">
+						<Footer />
 					</div>
 				</div>
 			</div>

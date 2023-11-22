@@ -2,7 +2,7 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "21 January 2023",
+		date: "22 November 2023",
 		title: "Article 1",
 		description: "This is the description of article 1",
 		style: `
@@ -33,7 +33,7 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "21 January 2023",
+		date: "22 November 2023",
 		title: "Article 2",
 		description: "This is the description of article 2",
 		style: ``,

@@ -5,6 +5,8 @@ import Footer from "../components/common/footer.jsx";
 import Logo from "../components/common/logo.jsx";
 import Project from "../components/projects/projects.jsx";
 
+import INFO from "../data/user";
+
 import "./styles/projects.css";
 
 const Projects = () => {
@@ -36,50 +38,21 @@ const Projects = () => {
 						</div>
 
 						<div className="projects-list">
-
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/ruby/ruby.png"
-									}
-									title="Tweetable"
-									description="An app rooted in Twitter's model that allows users to create accounts, log in/out, create “tweets”, reply to other
-									user’s tweets and check their profiles."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
-									}
-									title="Eatable"
-									description="An app that allows users to access a menu of dishes, authenticate and
-									perform CRUD operations in direct communication with an external API."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-	
-							<div className="projects-project">
-								<Project
-									logo={
-										"https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
-									}
-									title="Get-That-Home"
-									description="A real estate platform connecting landlords and home-seekers. Landlords can list
-									properties, and home-seekers can browse and filter listings."
-									linkText="View Project"
-									link="https://github.com"
-								/>
-							</div>
-
+							{INFO.projects.map((project) => (
+								<div className="projects-project">
+									<Project
+										logo={project.logo}
+										title={project.title}
+										description={project.description}
+										linkText={project.linkText}
+										link={project.link}
+									/>
+								</div>
+							))}
 						</div>
-						<div className="page-footer">
-							<Footer />
-						</div>
+					</div>
+					<div className="page-footer">
+						<Footer />
 					</div>
 				</div>
 			</div>
