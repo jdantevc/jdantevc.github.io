@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import NavBar from "../components/common/navBar.jsx";
 import Footer from "../components/common/footer.jsx";
@@ -8,6 +8,9 @@ import Project from "../components/projects/projects.jsx";
 import "./styles/projects.css";
 
 const Projects = () => {
+	useEffect(() => {
+		document.title = "Projects";
+	}, []);
 	return (
 		<>
 			<div className="page-content">

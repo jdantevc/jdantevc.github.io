@@ -23,6 +23,10 @@ const Homepage = () => {
 	const [oldLogoSize, setOldLogoSize] = useState(80);
 
 	useEffect(() => {
+		document.title = "Home";
+	}, []);
+
+	useEffect(() => {
 		const handleScroll = () => {
 			let scroll = Math.round(window.scrollY, 2);
 

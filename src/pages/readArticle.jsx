@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 
@@ -18,12 +18,16 @@ const ReadArticle = () => {
 
 	const article = myArticles[slug - 1];
 
+	useEffect(() => {
+		document.title = article().title;
+	}, [article]);
+
 	ArticleStyle = styled.div`
 		${article().style}
 	`;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
 				<NavBar />
 
@@ -65,7 +69,7 @@ const ReadArticle = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

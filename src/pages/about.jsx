@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -8,6 +8,9 @@ import Socials from "../components/about/socials";
 import "./styles/about.css";
 
 const About = () => {
+	useEffect(() => {
+		document.title = "About";
+	}, []);
 	return (
 		<>
 			<div className="page-content">
@@ -24,7 +27,7 @@ const About = () => {
 							<div className="about-right-side">
 								<div className="title about-title">
 									I’m Dante Vasquez. I live in Peru, where I
-									create for a new future.
+									create for a better future.
 								</div>
 
 								<div className="subtitle about-subtitle">
