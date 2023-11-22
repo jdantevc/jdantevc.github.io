@@ -16,7 +16,7 @@ const About = () => {
 	return (
 		<>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
 						<div className="about-logo">
@@ -51,6 +51,9 @@ const About = () => {
 									<Socials />
 								</div>
 							</div>
+						</div>
+						<div className="about-socials-mobile">
+							<Socials />
 						</div>
 						</div>
 					<div className="page-footer">

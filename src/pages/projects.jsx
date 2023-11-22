@@ -14,7 +14,7 @@ const Projects = () => {
 	return (
 		<>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="projects" />
 				<div className="content-wrapper">
 					<div className="projects-logo-container">
 							<div className="projects-logo">

@@ -19,7 +19,7 @@ const Articles = () => {
 	return (
 		<>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="articles" />
 				<div className="content-wrapper">
 					<div className="articles-logo-container">
 						<div className="articles-logo">
