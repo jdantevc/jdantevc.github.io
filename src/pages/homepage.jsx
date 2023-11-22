@@ -11,6 +11,7 @@ import Logo from "../components/common/logo";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Education from "../components/homepage/education";
+import AllProjects from "../components/projects/allProjects";
 import Footer from "../components/common/footer";
 
 import INFO from "../data/user";
@@ -130,6 +131,10 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+						</div>
+
+						<div className="homepage-projects">
+							<AllProjects />
 						</div>
 
 						<div className="homepage-after-title">
