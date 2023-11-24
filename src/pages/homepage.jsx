@@ -26,7 +26,7 @@ const Homepage = () => {
 	const [oldLogoSize, setOldLogoSize] = useState(80);
 
 	useEffect(() => {
-		document.title = "Home";
+		document.title = INFO.main.title;
 	}, []);
 
 	useEffect(() => {

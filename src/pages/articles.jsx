@@ -13,7 +13,7 @@ import "./styles/articles.css";
 
 const Articles = () => {
 	useEffect(() => {
-		document.title = "Articles";
+		document.title = `Articles | ${INFO.main.title}`;
 	}, []);
 
 	return (

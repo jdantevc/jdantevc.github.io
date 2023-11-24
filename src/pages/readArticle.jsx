@@ -6,6 +6,8 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
+import INFO from "../data/user";
+
 import myArticles from "../data/articles";
 
 import "./styles/readArticle.css";
@@ -19,7 +21,7 @@ const ReadArticle = () => {
 	const article = myArticles[slug - 1];
 
 	useEffect(() => {
-		document.title = article().title;
+		document.title = `${article().title} | ${INFO.main.title}`;
 	}, [article]);
 
 	ArticleStyle = styled.div`

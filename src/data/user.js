@@ -1,5 +1,6 @@
 const INFO = {
 	main: {
+		title: "Portfolio by jdantevc",
 		name: "Dante Vasquez",
 		email: "jdantevc@gmail.com",
 		logo: "../logo.png",
