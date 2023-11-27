@@ -15,6 +15,19 @@ const Education = () => {
 					<div className="education-body">
 						<div className="education">
 							<img
+								src="./unmsm.png"
+								alt="unmsm"
+								className="education-image"
+							/>
+							<div className="education-title">UNMSM</div>
+							<div className="education-subtitle">
+								Lawyer
+							</div>
+							<div className="education-duration">2013 - 2018</div>
+						</div>
+
+						<div className="education">
+							<img
 								src="./codeable.png"
 								alt="codeable"
 								className="education-image"
