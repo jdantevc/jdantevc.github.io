@@ -1,6 +1,12 @@
 {
-	"name": "reactfolio",
-	"version": "1.0.0",
+	"name": "portfolio",
+	"version": "1.1.0",
+	"description": "Personal portfolio of jdantevc made with React",
+	"author": {
+		"name": "Dante Vasquez",
+		"email": "jdantevc@gmail.com"
+	},
+	"license": "MIT",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.4.0",
