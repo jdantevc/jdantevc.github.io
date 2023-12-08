@@ -36,7 +36,7 @@ const INFO = {
 				"An app rooted in Twitter's model that allows users to create accounts, log in/out, create “tweets”, reply to other user’s tweets and check their profiles.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/ruby/ruby.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/jdantevc/Tweetable",
 		},
 
 		{
@@ -45,7 +45,7 @@ const INFO = {
 				"An app that allows users to access a menu of dishes, authenticate and perform CRUD operations in direct communication with an external API.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/jdantevc/Eatable",
 		},
 
 		{
@@ -54,7 +54,7 @@ const INFO = {
 				"A real estate platform connecting landlords and home-seekers. Landlords can list properties, and home-seekers can browse and filter listings.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/Kamaqen/c11-team1-getThatHome",
 		},
 	],
 };
