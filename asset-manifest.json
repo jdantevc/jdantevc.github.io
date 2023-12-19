@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jdantevc.github.io/static/css/main.622e44c6.css",
-    "main.js": "/jdantevc.github.io/static/js/main.5fbaec5a.js",
-    "static/js/787.7da95b79.chunk.js": "/jdantevc.github.io/static/js/787.7da95b79.chunk.js",
-    "index.html": "/jdantevc.github.io/index.html",
-    "main.622e44c6.css.map": "/jdantevc.github.io/static/css/main.622e44c6.css.map",
-    "main.5fbaec5a.js.map": "/jdantevc.github.io/static/js/main.5fbaec5a.js.map",
-    "787.7da95b79.chunk.js.map": "/jdantevc.github.io/static/js/787.7da95b79.chunk.js.map"
+    "main.css": "/static/css/main.622e44c6.css",
+    "main.js": "/static/js/main.c179ff97.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "index.html": "/index.html",
+    "main.622e44c6.css.map": "/static/css/main.622e44c6.css.map",
+    "main.c179ff97.js.map": "/static/js/main.c179ff97.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.622e44c6.css",
-    "static/js/main.5fbaec5a.js"
+    "static/js/main.c179ff97.js"
   ]
 }
