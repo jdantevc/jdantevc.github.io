@@ -1,4 +1,5 @@
 {
+	"homepage": "http://jdantevc.github.io/portfolio",
 	"name": "portfolio",
 	"version": "1.1.0",
 	"description": "Personal portfolio of jdantevc made with React",
@@ -49,5 +50,8 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.0"
 	}
 }
